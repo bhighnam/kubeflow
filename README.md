@@ -15,3 +15,6 @@ The main components to work are the following based on the Installing Kube flow 
 Link to kubeflow spark operator getting started page --> https://www.kubeflow.org/docs/components/spark-operator/getting-started/
 
 URL to spark operator helm chart https://github.com/kubeflow/spark-operator
+
+# Discoveries
+Looks like to use the dashboard and the UI components of kubeflow cannot be standalone components meaning that it cannot run independently. Have to stand up the entire kubeflow platform with all of the bells and whistles
