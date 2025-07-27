@@ -1,0 +1,21 @@
+    apiVersion: sparkoperator.k8s.io/v1beta2
+    kind: SparkApplication
+    metadata:
+      name: my-spark-job
+      namespace: default
+    spec:
+      type: Scala
+      mode: cluster
+      image: docker.io/library/spark:4.0.0
+      imagePullPolicy: IfNotPresent
+      mainClass: "com.example.MySparkApp"
+      mainApplicationFile: "local:///opt/spark/jars/my-spark-app.jar"
+      sparkVersion: "4.0.0" # Specify your Spark version
+      driver:
+        cores: 1
+        memory: "512m"
+        serviceAccount: spark
+      executor:
+        cores: 1
+        instances: 2
+        memory: "512m"
