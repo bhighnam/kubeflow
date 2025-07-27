@@ -18,3 +18,7 @@ URL to spark operator helm chart https://github.com/kubeflow/spark-operator
 
 # Discoveries
 Looks like to use the dashboard and the UI components of kubeflow cannot be standalone components meaning that it cannot run independently. Have to stand up the entire kubeflow platform with all of the bells and whistles
+
+# To do
+
+Look into deployment components from --> https://github.com/kubeflow/manifests
