@@ -9,7 +9,7 @@
       image: docker.io/library/spark:4.0.0
       imagePullPolicy: IfNotPresent
       mainClass: "com.example.MySparkApp"
-      mainApplicationFile: "local:///opt/spark/jars/my-spark-app.jar"
+      mainApplicationFile: local:///opt/spark/examples/jars/spark-examples.jar"
       sparkVersion: "4.0.0" # Specify your Spark version
       driver:
         cores: 1
